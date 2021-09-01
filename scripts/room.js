@@ -1,3 +1,5 @@
+mystorage = window.localStorage 
+
 fetch('https://serene-basin-92650.herokuapp.com/get-rooms/')
 .then(res => res.json())
 .then(data =>{
@@ -50,7 +52,7 @@ function bookRoom(){
         body: JSON.stringify({
             "check_in_date": document.querySelector('#check-in').value,
             "check_out_date": document.querySelector('#check-out').value,
-            "appointment_user": "Mick",
+            "appointment_user": mystorage.getItem('username'),
             "hotel_name": document.querySelector(".hotel-name").innerText,
             "room_no": document.querySelector(".room-price").innerText
         }),

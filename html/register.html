@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/2e13a07ba8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../styles/login.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="../styles/register.css">
+    <title>Register Page</title>
 </head>
 <body>
-    <header class="header">
+<header class="header">
         <div class="container">
           <nav class="nav-bar">
             <a href="#" class="logo">Cosmopolitan</a>
@@ -38,11 +38,7 @@
         </div>
       </header>
 
-      <div class="title">
-          <h4 class="title-header">Login</h4>
-      </div>
-    
-    <div class="form-inner">
+      <div class="form-inner">
         <form action="https://serene-basin-92650.herokuapp.com/user-login/" method="GET" class="Login" id="user-form">
         <div class="field">
             <input type="text" id="username" name="username" placeholder="username" required>
@@ -56,7 +52,7 @@
         </div>
 
     </form>
-    <form action="https://tashwill-system.herokuapp.com/admin-login/" method="POST" class="admin" id="admin-form">
+    <form action="https://serene-basin-92650.herokuapp.com/register-admin/" method="POST" class="admin" id="admin-form">
         <div class="field">
             <input type="text" id="admin_username" name="admin_username" placeholder="username" required>
         </div>
@@ -65,14 +61,10 @@
         </div>
         <div class="field btn">
             <div class="btn-layer"></div>
-            <button type="submit" onclick="event.preventDefault(), admin()" class="btn">Admin user</button>
+            <input type="submit" id='submit'onclick="event.preventDefault()">
         </div>
     </form>
-    </div>
-    <div class="signup-link">
-        dont have an account? <a href="./signup.html">Sign up here</a></p>
-        </div>
+
 <script src="../scripts/landing.js"></script>
-<script src="../scripts/login.js"></script>
 </body>
 </html>
