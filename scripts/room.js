@@ -40,13 +40,18 @@ fetch('https://serene-basin-92650.herokuapp.com/get-rooms/')
             </div>
             </div>
             </div>
-        </div>`      
+        </div>`    
+        mystorage.setItem('price', `${product[6]}`)  
         })
 })
 
 
-
 function bookRoom(){
+    let dateOne = new Date(document.querySelector('#check-in').value)
+    let dateTwo = new Date(document.querySelector('#check-out').value)
+    let difference =  dateTwo.getTime()-dateOne.getTime() 
+    let days = 1000 * 3600 * 24
+    let results = difference/days
     fetch('https://serene-basin-92650.herokuapp.com/create-appointment/',{
         method: "POST",
         body: JSON.stringify({
@@ -54,7 +59,9 @@ function bookRoom(){
             "check_out_date": document.querySelector('#check-out').value,
             "appointment_user": mystorage.getItem('username'),
             "hotel_name": document.querySelector(".hotel-name").innerText,
-            "room_no": document.querySelector(".room-price").innerText
+            "room_no": document.querySelector(".room-number").innerText,
+            "total": parseInt(mystorage.getItem('price')) * results
+            
         }),
         headers: {
             'Content-type': 'application/json',

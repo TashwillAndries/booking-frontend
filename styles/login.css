@@ -124,7 +124,7 @@ body{
 
 form{
     background-color: rgba(154, 18, 179, 1);
-    width: 50vw;
+    width: 50vw;  
     height: 30vh;
     border-radius: 50px;
     display: flex;
@@ -137,10 +137,13 @@ form{
     margin-right: 25px;
 }
 
+input{
+    font-size: 15px;
+}
+
 .signup-link{
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-
 }
