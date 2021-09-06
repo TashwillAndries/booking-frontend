@@ -39,7 +39,24 @@
       </header>
 
       <div class="form-inner">
-        <form action="https://serene-basin-92650.herokuapp.com/user-login/" method="GET" class="Login" id="user-form">
+        <form class="Login" id="user-form">
+          <div class="field">
+            <input type="text" id="user_id" name="user_id" placeholder="ID Number" required>
+        </div>
+        <div class="field">
+          <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+      </div>
+      <div class="field">
+        <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+    </div>
+    <div class="field">
+      <input type="text" id="address" name="address" placeholder="Address" required>
+  </div>
+<div class="field">
+  <input type="text" id="email" name="email" placeholder="email" required>
+</div>
+
+
         <div class="field">
             <input type="text" id="username" name="username" placeholder="username" required>
         </div>
@@ -48,11 +65,11 @@
         </div>
         <div class="field btn">
             <div class="btn-layer"></div>
-            <button type="submit" onclick="event.preventDefault(), login()" class="btn">User Login</button>
+            <input type="submit" class="btn"></input>
         </div>
 
     </form>
-    <form action="https://serene-basin-92650.herokuapp.com/register-admin/" method="POST" class="admin" id="admin-form">
+    <form class="admin" id="admin-form">
         <div class="field">
             <input type="text" id="admin_username" name="admin_username" placeholder="username" required>
         </div>
@@ -61,10 +78,11 @@
         </div>
         <div class="field btn">
             <div class="btn-layer"></div>
-            <input type="submit" id='submit'onclick="event.preventDefault()">
+            <input type="submit">
         </div>
     </form>
 
 <script src="../scripts/landing.js"></script>
+<script src="../scripts/register.js"></script>
 </body>
 </html>

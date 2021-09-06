@@ -1,57 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/admin.css">
-    <script src="https://kit.fontawesome.com/2e13a07ba8.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/admin.css" />
+    <script
+      src="https://kit.fontawesome.com/2e13a07ba8.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Admin Page</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-          <nav class="nav-bar">
-            <a href="#" class="logo">Cosmopolitan</a>
-            <div class="nav-links">
-              <i class="fas fa-bars"></i>
-              <i class="fas fa-times"></i>
-            </div>
-            <ul class="nav-link">
-              <li class="nav-item">
-                <a href="#" class="link">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="link">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="link">Offers</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="link">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="link">Login</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-    <div id="product-container"></div>
-
-    <section class="container content-section">
-      <h2 class="section-header">APPOINTMENTS</h2>
-      <div class="cart-row">
-          <span class="cart-item cart-header cart-column">Hotel</span>
-          <span class="cart-price cart-header cart-column">Username</span>
-          <span class="cart-quantity cart-header cart-column">Check-in</span>
-          <span class="check-out cart-header cart-column">Check-out</span>
-          <span class="room-price cart-header cart-column">Room</span>
-          <span class="total cart-header cart-column">Total</span>
+      <div class="container">
+        <nav class="nav-bar">
+          <a href="#" class="logo">Cosmopolitan</a>
+          <div class="nav-links">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+          </div>
+          <ul class="nav-link">
+            <li class="nav-item">
+              <a href="#" class="link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="link">Offers</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="link">Login</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div class="cart-items"></div>
+    </header>
+    <section class="container content-section">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Hotel</th>
+            <th>username</th>
+            <th data-column="Check-in" data-order="desc">Check-in</th>
+            <th>check-out</th>
+            <th>Room</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody id="tableData"></tbody>
+      </table>
+      <button class="btn-danger" type="button">REMOVE</button>
+      <button class="update">update Appointment</button>
+      <div class="update-modal-bg">
+        <div class="update-modal">
+          <form class="remove-form">
+            <input
+              type="date"
+              id="Check-in"
+              name="check_in_date"
+              placeholder="check-in Date"
+              required
+            />
+            <input
+              type="date"
+              id="Check-out"
+              name="check_out_date"
+              placeholder="check-out Date"
+              required
+            />
+            <input
+              type="text"
+              id="username"
+              name="appointment_user"
+              placeholder="appointment_user"
+              required
+            />
+            <input
+              type="text"
+              id="hotel_name"
+              name="hotel_name"
+              placeholder="hotel name"
+              required
+            />
+            <input
+              type="text"
+              id="room_no"
+              name="room_no"
+              placeholder="room Number"
+              required
+            />
+          </form>
+          <span id="update-close">X</span>
+          <button class="delete" onclick="removeAppoint()">
+            Remove Appointment
+          </button>
+        </div>
+      </div>
+
+      <!-- remove modal -->
+      <div class="modal-bg">
+        <div class="modal">
+          <form class="remove-form">
+            <input
+              type="text"
+              id="appointment_id"
+              name="appointment_id"
+              placeholder="appointment_id"
+              required
+            />
+          </form>
+          <span class="modal-close">X</span>
+          <button class="delete" onclick="removeAppoint()">
+            Remove Appointment
+          </button>
+        </div>
+      </div>
     </section>
-<script src="../scripts/landing.js"></script>
-<script src="../scripts/admin.js"></script>
-</body>
+    <script src="../scripts/landing.js"></script>
+    <script src="../scripts/admin.js"></script>
+  </body>
 </html>

@@ -224,3 +224,7 @@ body{
     color: darkgoldenrod;
 
 }
+
+.cart-row {
+    display: flex;
+}
