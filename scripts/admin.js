@@ -45,12 +45,31 @@ function removeAppoint() {
 
 let updateModalBtn = document.querySelector(".update");
 let updateModalBg = document.querySelector(".update-modal-bg");
-let updateModalClose = document.getElementById("update-close");
+let updateModalClose = document.querySelector("#update-close");
 
 updateModalBtn.addEventListener("click", function () {
   updateModalBg.classList.add("update-active");
 });
 
 updateModalClose.addEventListener("click", function () {
-  updateModalBg.classList.remove("upate-active");
+  updateModalBg.classList.remove("update-active");
 });
+
+// update data
+
+function updateAppoint() {
+  let id = document.getElementById("appointment_id").value;
+  console.log(id);
+  fetch(`https://serene-basin-92650.herokuapp.com/update-appointment/${id}`, {
+    method: "PUT",
+    body: JSON.stringify({
+      check_in_date: document.getElementById("check_in_date").value,
+      check_out_date: document.getElementById("check_out_date").value,
+      appointment_user: document.getElementById("username").value,
+      hotel_name: document.getElementById("hotel_name").value,
+    }),
+    headers: {
+      "Content-type": "application/json",
+    },
+  });
+}

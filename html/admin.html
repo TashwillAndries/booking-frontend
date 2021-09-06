@@ -60,45 +60,64 @@
       <div class="update-modal-bg">
         <div class="update-modal">
           <form class="remove-form">
-            <input
-              type="date"
-              id="Check-in"
-              name="check_in_date"
-              placeholder="check-in Date"
-              required
-            />
-            <input
-              type="date"
-              id="Check-out"
-              name="check_out_date"
-              placeholder="check-out Date"
-              required
-            />
-            <input
-              type="text"
-              id="username"
-              name="appointment_user"
-              placeholder="appointment_user"
-              required
-            />
-            <input
-              type="text"
-              id="hotel_name"
-              name="hotel_name"
-              placeholder="hotel name"
-              required
-            />
-            <input
-              type="text"
-              id="room_no"
-              name="room_no"
-              placeholder="room Number"
-              required
-            />
+            <div class="input-field">
+              <input
+                type="text"
+                id="appointment_id"
+                name="appointment_id"
+                placeholder="appointment_id"
+                required
+              />
+            </div>
+            <div class="input-field">
+              <input
+                type="date"
+                id="check_in_date"
+                name="check_in_date"
+                placeholder="check-in Date"
+                required
+              />
+            </div>
+            <div class="input-field">
+              <input
+                type="date"
+                id="check_out_date"
+                name="check_out_date"
+                placeholder="check-out Date"
+                required
+              />
+            </div>
+            <div class="input-field">
+              <input
+                type="text"
+                id="username"
+                name="appointment_user"
+                placeholder="appointment_user"
+                required
+              />
+            </div>
+            <div class="input-field">
+              <input
+                type="text"
+                id="hotel_name"
+                name="hotel_name"
+                placeholder="hotel name"
+                required
+              />
+            </div>
+            <div class="input-field">
+              <input
+                type="text"
+                id="room_no"
+                name="room_no"
+                placeholder="room Number"
+                required
+              />
+            </div>
           </form>
           <span id="update-close">X</span>
           <button class="delete" onclick="removeAppoint()">
-            Remove Appointment
+            Update Appointment
           </button>
         </div>
       </div>

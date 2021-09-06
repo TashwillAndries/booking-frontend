@@ -159,14 +159,15 @@ body {
 
 .btn-danger {
   color: white;
-  background-color: #eb5757;
+  background-color: rgba(102, 51, 153, 1);
   border: none;
   border-radius: 0.3em;
   font-weight: bold;
+  padding: 10px 5%;
 }
 
 .btn-danger:hover {
-  background-color: #cc4c4c;
+  background-color: rgba(102, 51, 153, 0.5);
 }
 
 /* trying */
@@ -218,7 +219,7 @@ tr:hover {
 
 .modal {
   position: relative;
-  background-color: white;
+  background-color: rgba(102, 51, 153, 0.5);
   width: 30%;
   height: 50%;
   color: black;
@@ -264,7 +265,7 @@ tr:hover {
 
 .update-modal {
   position: relative;
-  background-color: white;
+  background-color: rgba(102, 51, 153, 0.5);
   width: 30%;
   height: 50%;
   color: black;
@@ -288,8 +289,18 @@ tr:hover {
 
 .update {
   color: white;
-  background-color: #eb5757;
+  background-color: rgba(102, 51, 153, 1);
   border: none;
   border-radius: 0.3em;
   font-weight: bold;
+  padding: 10px 5%;
+  transition: 0.3s ease-in-out;
+}
+
+.update:hover {
+  background-color: rgba(102, 51, 153, 0.5);
+}
+
+.input-field input {
+  width: 24vw;
 }
