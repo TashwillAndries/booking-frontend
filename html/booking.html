@@ -1,131 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/booking.css">
-    <script src="https://kit.fontawesome.com/2e13a07ba8.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/booking.css" />
+    <script
+      src="https://kit.fontawesome.com/2e13a07ba8.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Booking</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-          <nav class="nav-bar">
-            <a href="#" class="logo">Cosmopolitan</a>
-            <div class="nav-links">
-              <i class="fas fa-bars"></i>
-              <i class="fas fa-times"></i>
-            </div>
-            <ul class="nav-link">
-              <li class="nav-item">
-                <a href="#" class="link">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="link">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="link">Offers</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="link">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="link">Login</a>
-              </li>
-            </ul>
-          </nav>
+      <div class="container">
+        <nav class="nav-bar">
+          <a href="#" class="logo">Cosmopolitan</a>
+          <div class="nav-links">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+          </div>
+          <ul class="nav-link">
+            <li class="nav-item">
+              <a href="#" class="link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="link">Offers</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="link">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="booking">
+      <div class="container">
+        <!-- <form action="" class="form"> -->
+        <div class="input-group">
+          <label for="Destination" class="input-label">Destination</label>
+          <input type="text" class="input" id="Destination" />
         </div>
-      </header>
-<section class="booking">
-    <div class="container">
-        <form action="" class="form">
-            <div class="input-group">
-                <label for="Destination" class="input-label">Destination</label>
-                <input type="text" class="input" id="room">
-            </div>
-            <div class="input-group">
-                <label for="check-in" class="input-label">check-in</label>
-                <input type="date" class="input" id="check-in">
-            </div>
-            <div class="input-group">
-                <label for="check-out" class="input-label">check-out</label>
-                <input type="date" class="input" id="check-out">
-            </div>
-            <div class="input-group">
-                <label for="adults" class="input-label">adults</label>
-                <select id="adults" class="options">
-                    <option value="0">0</option>
-                    <option value="0">1</option>
-                    <option value="0">2</option>
-                    <option value="0">3</option>
-                    <option value="0">4</option>
-                    <option value="0">5</option>
-                </select>
-            </div>
-            <div class="input-group">
-                <label for="children" class="input-label">Children</label>
-                <select id="children" class="options">
-                    <option value="0">0</option>
-                    <option value="0">1</option>
-                    <option value="0">2</option>
-                    <option value="0">3</option>
-                    <option value="0">4</option>
-                    <option value="0">5</option>
-                </select>
-            </div>
-        </form>
-        <button type="submit" class="btn form-btn btn-color">Search <span class="dots"><i class="fas fa-ellipsis-h"></i></span></button>
-    </div>
-</section>
-<section class="hotels">
-    <div class="container">
+        <!-- <div class="input-group">
+            <label for="check-in" class="input-label">check-in</label>
+            <input type="date" class="input" id="check-in" />
+          </div>
+          <div class="input-group">
+            <label for="check-out" class="input-label">check-out</label>
+            <input type="date" class="input" id="check-out" />
+          </div>
+          <div class="input-group">
+            <label for="adults" class="input-label">adults</label>
+            <select id="adults" class="options">
+              <option value="0">0</option>
+              <option value="0">1</option>
+              <option value="0">2</option>
+              <option value="0">3</option>
+              <option value="0">4</option>
+              <option value="0">5</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="children" class="input-label">Children</label>
+            <select id="children" class="options">
+              <option value="0">0</option>
+              <option value="0">1</option>
+              <option value="0">2</option>
+              <option value="0">3</option>
+              <option value="0">4</option>
+              <option value="0">5</option>
+            </select>
+          </div>
+        </form> -->
+        <button
+          type="submit"
+          class="btn form-btn btn-color"
+          onclick="searchNames()"
+        >
+          Search <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+        </button>
+      </div>
+    </section>
+    <section class="hotels">
+      <div class="container">
         <h5 class="section-heading">
-            <span class="heading">Explore</span>
-            <span class="sub-heading">Our hotels</span>
+          <span class="heading">Explore</span>
+          <span class="sub-heading">Our hotels</span>
         </h5>
         <div class="grid">
-            <div  id="grid-item" class="hotels">
-                <img src="../images/L-hotel.jpg" alt="" class="hotel-images">
-                <h5 class="hotel-name">L Hotel</h5>
-                <span class="hotel-price">From R1500/night</span>
-                <div class="hotel-rating">
-                    <i class="fas fa-star rating"></i>
-                    <i class="fas fa-star rating"></i>
-                    <i class="fas fa-star rating"></i>
-                    <i class="fas fa-star rating"></i>
-                    <i class="fas fa-star-half rating"></i>
-                </div>
-                <button class="btn btn-color">Book now <span class="dots"><i class="fas fa-ellipsis-h"></i></span></button>
+          <div id="grid-item" class="hotels">
+            <img src="../images/L-hotel.jpg" alt="" class="hotel-images" />
+            <h5 class="hotel-name">L Hotel</h5>
+            <span class="hotel-price">From R1500/night</span>
+            <div class="hotel-rating">
+              <i class="fas fa-star rating"></i>
+              <i class="fas fa-star rating"></i>
+              <i class="fas fa-star rating"></i>
+              <i class="fas fa-star rating"></i>
+              <i class="fas fa-star-half rating"></i>
             </div>
-            <div   id="grid-item" class="hotels">
-                <img src="../images/veyron hotel.jpg" alt="" class="hotel-images">
-                <h5 class="hotel-name">Veyron Hotel</h5>
-                <span class="hotel-price">From R1000/night</span>
-                <div class="hotel-rating">
-                    <i class="fas fa-star rating"></i>
-                    <i class="fas fa-star rating"></i>
-                    <i class="fas fa-star rating"></i>
-                    <i class="fas fa-star rating"></i>
-                </div>
-                <button class="btn btn-color">Book now <span class="dots"><i class="fas fa-ellipsis-h"></i></span></button>
+            <button class="btn btn-color" onclick="differentPage()">
+              Book now
+              <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+            </button>
+          </div>
+          <div id="grid-item" class="hotels">
+            <img src="../images/veyron hotel.jpg" alt="" class="hotel-images" />
+            <h5 class="hotel-name">Veyron Hotel</h5>
+            <span class="hotel-price">From R1000/night</span>
+            <div class="hotel-rating">
+              <i class="fas fa-star rating"></i>
+              <i class="fas fa-star rating"></i>
+              <i class="fas fa-star rating"></i>
+              <i class="fas fa-star rating"></i>
             </div>
-            <div  id="grid-item" class="hotels">
-                <img src="../images/gaylord.jpg" alt="" class="hotel-images">
-                <h5 class="hotel-name">Gaylord hotel</h5>
-                <span class="hotel-price">From R650/night</span>
-                <div class="hotel-rating">
-                    <i class="fas fa-star rating"></i>
-                    <i class="fas fa-star rating"></i>
-                    <i class="fas fa-star rating"></i>
-                </div>
-                <button class="btn btn-color">Book now <span class="dots"><i class="fas fa-ellipsis-h"></i></span></button>
+            <button class="btn btn-color">
+              Book now
+              <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+            </button>
+          </div>
+          <div id="grid-item" class="hotels">
+            <img src="../images/gaylord.jpg" alt="" class="hotel-images" />
+            <h5 class="hotel-name">Gaylord hotel</h5>
+            <span class="hotel-price">From R650/night</span>
+            <div class="hotel-rating">
+              <i class="fas fa-star rating"></i>
+              <i class="fas fa-star rating"></i>
+              <i class="fas fa-star rating"></i>
             </div>
+            <button class="btn btn-color">
+              Book now
+              <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+            </button>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<script src="../scripts/landing.js"></script>
-<script src="../scripts/booking.js"></script>
-</body>
+    <script src="../scripts/landing.js"></script>
+    <script src="../scripts/booking.js"></script>
+  </body>
 </html>
