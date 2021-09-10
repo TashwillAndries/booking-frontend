@@ -88,6 +88,7 @@ function bookRoom() {
     alert("must be logged in to book a room");
   }
   sendEmail();
+  window.location.href = "login.html";
 }
 
 // function to book room two
@@ -125,6 +126,7 @@ function bookRoomTwo() {
     alert("must be logged in to book a room");
   }
   sendEmail();
+  window.location.href = "login.html";
 }
 
 // book room three function
@@ -167,6 +169,7 @@ function bookRoomThree() {
     alert("must be logged in to book a room");
   }
   sendEmail();
+  window.location.href = "login.html";
 }
 
 // code to block out dates that has passed
