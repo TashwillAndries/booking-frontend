@@ -1,28 +1,131 @@
-body {
-  background-image: url(../images/Luxury-Five-Star-Hotel-London-UK.jpg);
-  background-size: cover;
-  padding: 5% 10%;
-  min-height: 100vh;
-  font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(102, 51, 153, 0.2),
+      rgba(102, 51, 153, 0.25)
+    ),
+    url("../images/0ZYAsI.jpg");
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.container a {
+  text-decoration: none;
   color: white;
 }
 
+.container ul {
+  list-style: none;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  justify-content: space-between;
+  background-color: rgba(154, 18, 179, 1);
+  z-index: 999;
+}
+
+.container {
+  width: 100%;
+  padding: 0 24px;
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 1500;
+}
+
+.nav-links .fa-times {
+  display: none;
+}
+
+.menu-active .nav-links .fa-times {
+  display: block;
+}
+
+.menu-active .nav-links .fa-bars {
+  display: none;
+}
+
+.nav-link {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100vh;
+  background-color: rgba(102, 51, 153, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1400;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.5s ease-in;
+}
+
+.menu-active .nav-link {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.nav-item {
+  display: block;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 16px;
+}
+
+.contact {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 10% 5%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 #contact-form {
-  background: rgba(247, 0, 0, 0.25);
+  background: rgba(102, 51, 153, 0.35);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  padding: 5% 10%;
+  padding: 10% 10%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  width: 50vw;
+  height: 50vh;
 }
 
 .form-info {
@@ -44,7 +147,7 @@ button {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   outline: none;
-  padding: 5% 10%;
+  padding: 1% 10%;
 }
 
 .form-input::placeholder {
@@ -64,4 +167,18 @@ button {
 }
 .form-heading {
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+.footer {
+  background-color: rgb(131, 58, 180);
+  padding: 10px 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 9%;
+}
+
+.footer i {
+  margin-right: 15px;
 }

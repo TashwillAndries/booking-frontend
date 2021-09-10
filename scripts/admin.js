@@ -73,6 +73,14 @@ function updateAppoint() {
   let difference = dateTwo.getTime() - dateOne.getTime();
   let days = 1000 * 3600 * 24;
   let results = difference / days;
+  if (document.getElementById("hotel_name").value == "L hotel") {
+    price = 1000;
+  } else if (document.getElementById("hotel_name").value == "Gaylord hotel") {
+    price = 600;
+  } else {
+    price = 3500;
+  }
+
   fetch(`https://serene-basin-92650.herokuapp.com/update-appointment/${id}/`, {
     method: "PUT",
     body: JSON.stringify({
@@ -80,8 +88,8 @@ function updateAppoint() {
       check_out_date: document.getElementById("check_out_date").value,
       appointment_user: document.getElementById("username").value,
       hotel_name: document.getElementById("hotel_name").value,
-      room_no: document.getElementById("room_number").value,
-      total: parseInt(mystorage.getItem("price")) * results,
+      room_no: document.getElementById("room_no").value,
+      total: price * results,
     }),
     headers: {
       "Content-type": "application/json",
