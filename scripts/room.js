@@ -87,6 +87,7 @@ function bookRoom() {
   } catch (err) {
     alert("must be logged in to book a room");
   }
+  sendEmail();
 }
 
 // function to book room two
@@ -123,6 +124,7 @@ function bookRoomTwo() {
   } catch (err) {
     alert("must be logged in to book a room");
   }
+  sendEmail();
 }
 
 // book room three function
@@ -157,7 +159,6 @@ function bookRoomThree() {
             "total",
             parseInt(mystorage.getItem("price")) * results
           );
-          sendEmail();
         });
     } else {
       alert("must be logged in to book a room");
@@ -165,6 +166,7 @@ function bookRoomThree() {
   } catch (err) {
     alert("must be logged in to book a room");
   }
+  sendEmail();
 }
 
 // code to block out dates that has passed
@@ -301,5 +303,9 @@ function sendEmail() {
     headers: {
       "Content-type": "application/json",
     },
-  });
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+    });
 }

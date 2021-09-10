@@ -34,42 +34,43 @@
           </nav>
         </div>
       </header>
-
       <div class="form-inner">
         <div class="user-form">
+          <h4 class="user-header">User Register</h4>
         <form class="Login" id="user-form">
-          <div class="field">
+          <div class="user-field">
             <input type="text" id="user_id" name="user_id" placeholder="ID Number" required>
         </div>
-        <div class="field">
+        <div class="user-field">
           <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
       </div>
-      <div class="field">
+      <div class="user-field">
         <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
     </div>
-    <div class="field">
+    <div class="user-field">
       <input type="text" id="address" name="address" placeholder="Address" required>
   </div>
-<div class="field">
+<div class="user-field">
   <input type="text" id="email" name="email" placeholder="email" required>
 </div>
 
 
-        <div class="field">
+        <div class="user-field">
             <input type="text" id="username" name="username" placeholder="username" required>
         </div>
-        <div class="field">
+        <div class="user-field">
             <input type="text" id="password" name="password" placeholder="password" required> 
         </div>
-        <div class="field btn">
+        <div class="user-field btn">
             <div class="btn-layer"></div>
             <input type="submit" class="btn"></input>
         </div>
 
     </form>
   </div>
-  
+  <div class="admin-form">
     <form class="admin" id="admin-form">
+      <h4 class="user-header">Admin Register</h4>
         <div class="field">
             <input type="text" id="admin_username" name="admin_username" placeholder="username" required>
         </div>
@@ -81,6 +82,13 @@
             <input type="submit">
         </div>
     </form>
+  </div>
+      </div>
+
+      <footer class="footer">
+        <i class="far fa-copyright"></i>
+        <p>Cosmopolitan Hotels</p>
+      </footer>
 
 <script src="../scripts/landing.js"></script>
 <script src="../scripts/register.js"></script>

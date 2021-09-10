@@ -354,7 +354,6 @@ tr:hover {
   body {
     width: 100vw;
     height: 100%;
-    overflow-y: hidden;
   }
   .nav-link {
     width: 100%;

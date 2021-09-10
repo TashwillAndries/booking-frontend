@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/2e13a07ba8.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Booking</title>
   </head>
   <body>
@@ -47,7 +48,13 @@
           <span class="sub-heading">Our hotels</span>
         </h5>
         <div class="grid">
-          <div id="grid-item" class="hotels">
+          <div
+            id="grid-item"
+            class="hotels"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
             <img src="../images/L-hotel.jpg" alt="" class="hotel-images" />
             <h5 class="hotel-name">L Hotel</h5>
             <span class="hotel-price">From R1500/night</span>
@@ -63,7 +70,13 @@
               <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
             </button>
           </div>
-          <div id="grid-item" class="hotels">
+          <div
+            id="grid-item"
+            class="hotels"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
             <img src="../images/veyron hotel.jpg" alt="" class="hotel-images" />
             <h5 class="hotel-name">Veyron Hotel</h5>
             <span class="hotel-price">From R1000/night</span>
@@ -78,7 +91,13 @@
               <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
             </button>
           </div>
-          <div id="grid-item" class="hotels">
+          <div
+            id="grid-item"
+            class="hotels"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
             <img src="../images/gaylord.jpg" alt="" class="hotel-images" />
             <h5 class="hotel-name">Gaylord hotel</h5>
             <span class="hotel-price">From R650/night</span>
@@ -100,6 +119,10 @@
       </footer>
     </section>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="../scripts/landing.js"></script>
     <script src="../scripts/booking.js"></script>
   </body>

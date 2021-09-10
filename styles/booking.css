@@ -205,7 +205,7 @@ body {
 .hotels {
   height: 35rem;
   color: white;
-  padding: 1rem;
+  padding: 10% 5%;
   position: relative;
   z-index: 0;
 }
