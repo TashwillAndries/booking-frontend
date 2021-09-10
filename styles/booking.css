@@ -245,3 +245,60 @@ body {
 .rating {
   color: yellow;
 }
+
+.footer {
+  background-color: rgb(131, 58, 180);
+  padding: 10px 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 10%;
+}
+
+.footer i {
+  margin-right: 15px;
+}
+
+/* mobile responsivness */
+@media screen and (max-width: 800px) {
+  body {
+    max-width: 100vw;
+  }
+  .header {
+    width: 105vw;
+  }
+  .nav-bar {
+    width: 91vw;
+  }
+  .footer {
+    margin-left: 50%;
+    width: 100vw;
+  }
+  .nav-link {
+    width: 100%;
+    height: 100%;
+  }
+  .grid {
+    max-width: 100vw;
+  }
+  #grid-item {
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .hotel-images {
+    width: 85vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-heading {
+    padding: 15% 5%;
+  }
+
+  .hotel-name {
+    justify-content: center;
+    text-align: center;
+  }
+}

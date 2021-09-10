@@ -304,3 +304,17 @@ tr:hover {
 .input-field input {
   width: 24vw;
 }
+
+.footer {
+  background-color: rgb(131, 58, 180);
+  padding: 10px 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 17%;
+}
+
+.footer i {
+  margin-right: 15px;
+}

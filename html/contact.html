@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/contact.css">
+    <title>Contact</title>
+  </head>
+  <body>
+    <form
+    id="contact-form"
+    action="https://formspree.io/f/meqvopel"
+    method="POST"
+  >
+    <h1 class="form-heading">Contact Form</h1>
+    <div class="contact-group">
+      <div class="form-info">
+        <label class="form-label" for="Fullname">Full Name: </label>
+        <input
+          class="form-input"
+          type="name"
+          name="name"
+          id="name"
+          placeholder="Full name"
+          required
+        />
+      </div>
+      <div class="form-info">
+        <label class="form-label" for="email"> Your email: </label>
+        <input
+          class="form-input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="email@example.com"
+          required
+        />
+      </div>
+      <div class="form-info">
+        <label class="form-label" for="number">Your Contact number</label>
+        <input
+          class="form-input"
+          type="tel"
+          name="number"
+          id="number"
+          placeholder="072 123 4567"
+          required
+        />
+      </div>
+      <div class="form-info">
+        <label class="form-label" for="message"> Your message: </label>
+        <textarea
+          class="form-input"
+          name="message"
+          id="message"
+          placeholder="Type your message"
+          required
+        ></textarea>
+      </div>
+    </div>
+
+    <button class="button" type="submit">Send</button>
+  </form>
+</body>
+</html>
+  </body>
+</html>

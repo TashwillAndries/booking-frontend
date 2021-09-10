@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/rooms.css" />
+  
     <script
       src="https://kit.fontawesome.com/2e13a07ba8.js"
       crossorigin="anonymous"
@@ -25,6 +26,9 @@
               <a href="#" class="link">Home</a>
             </li>
             <li class="nav-item">
+              <a href="#" class="link" id="open-modal">View Profile</a>
+            </li>
+            <li class="nav-item">
               <a href="#" class="link">About</a>
             </li>
             <li class="nav-item">
@@ -38,11 +42,137 @@
             </li>
           </ul>
         </nav>
+        <div class="profile-bg">
+            <div class="profile-modal">
+                <p class="id-number"></p>
+                <p class="first-name"></p>
+                <p class="surname"></p>
+                <p class="address"></p>
+                <p class="email"></p>
+                <p class="username"></p>
+                <p class="password"></p>
+                <span class="profile-modal-close">X</span>
+                <button class="delete" onclick="deletePerson()">Delete user</button>
+            </div>
       </div>
     </header>
+    <div class="heading-title">
+      <h5 class="section-heading">
+        <span class="heading">Luxurios</span>
+        <span class="sub-heading">Affordable rooms</span>
+    </h5>
+  </div>
+    <div id="product-container">
+      <div class = 'shop-item'>
+<div class="container">
+  <!-- first room -->
+        <div class='grid room-grid'>
+       <div class='grid-item featured-rooms'>
+       <div class='image-wrap'>
+       <img class="room-image" src="" alt="room-image">
+       <h5 class="hotel-name"></h5>
+      <span class="room-number"></span>
+      <div class='book-form'>
+        <form action="" class="form">
+        <div class="input-group">
+        <label for="check-in" class="input-label">check-in</label>
+        <input type="date" class="input" id="check-in">
+        </div>
+        <div class="input-group">
+        <label for="check-out" class="input-label">check-out</label>
+        <input type="date" class="input" id="check-out">
+        </div>
+        </form>     
+        </div>
+       </div>
+        <div class="room-info">
+       <span class="room-price"><span class="per-night">Per Night</span></span>
+      <p class="paragraph"></p>
+       <button class="btn rooms-btn" id="open-book" onclick="bookRoom()">Book Now</button>
+        
+       </div>
+        
+      </div>
+      </div>
+      </div>
+        <!-- second room -->
+        <div class = 'shop-item'>
+          <div class="container">
+                  <div class='grid room-grid'>
+                 <div class='grid-item featured-rooms'>
+                 <div class='image-wrap'>
+                 <img class="room-image-two" src="" alt="room-image">
+                 <h5 class="hotel-name-two"></h5>
+                <span class="room-number-two"></span>
+                <div class='book-form'>
+                  <form action="" class="form">
+                  <div class="input-group">
+                  <label for="check-in" class="input-label">check-in</label>
+                  <input type="date" class="input" id="check-in-two">
+                  </div>
+                  <div class="input-group">
+                  <label for="check-out" class="input-label">check-out</label>
+                  <input type="date" class="input" id="check-out-two">
+                  </div>
+                  </form>     
+                  </div>
+                  
+                 </div>
+                  <div class="room-info">
+                 <span class="room-price-two"><span class="per-night">Per Night</span></span>
+                <p class="paragraph-two"></p>
+                 <button class="btn rooms-btn" id="open-book" onclick="bookRoomTwo()">Book Now</button>
+                  
+                 </div>
+                  
+                </div>
+                </div>
+                </div>
+                  
+                </div>;
+<!-- room three -->
+                <div class = 'shop-item'>
+                  <div class="container">
+                          <div class='grid room-grid'>
+                         <div class='grid-item featured-rooms'>
+                         <div class='image-wrap'>
+                         <img class="room-image-three" src="" alt="room-image">
+                         <h5 class="hotel-name-three"></h5>
+                        <span class="room-number-three"></span>
+                        <div class='book-form'>
+                          <form action="" class="form">
+                          <div class="input-group">
+                          <label for="check-in" class="input-label">check-in</label>
+                          <input type="date" class="input" id="check-in-three">
+                          </div>
+                          <div class="input-group">
+                          <label for="check-out" class="input-label">check-out</label>
+                          <input type="date" class="input" id="check-out-three">
+                          </div>
+                          </form>     
+                          </div>
+                          
+                         </div>
+                          <div class="room-info">
+                         <span class="room-price-three"><span class="per-night">Per Night</span></span>
+                        <p class="paragraph-three"></p>
+                         <button class="btn rooms-btn" id="open-book" onclick="bookRoomThree()">Book Now</button>
+                          
+                         </div>
+                          
+                        </div>
+                        </div>
+                        </div>
+                          
+                        </div>;
+      </div>;
+     
+    </div>
 
-    <div id="product-container"></div>
-
+    <footer class="footer">
+      <i class="far fa-copyright"></i>
+      <p>Cosmopolitan Hotels</p>
+    </footer>
     <script src="../scripts/landing.js"></script>
     <script src="../scripts/room.js"></script>
   </body>

@@ -41,15 +41,16 @@
       </div>
     </header>
     <section class="container content-section">
-      <input type="text" id="searchbar" />
+      <input type="text" id="searchbar" placeholder="username" />
+      <button id="search" onclick="searchAppoint()">search</button>
       <table>
         <thead>
           <tr>
             <th>ID</th>
             <th>Hotel</th>
             <th>username</th>
-            <th data-column="Check-in" data-order="desc">Check-in</th>
             <th>check-out</th>
+            <th data-column="Check-in" data-order="desc">Check-in</th>
             <th>Room</th>
             <th>Total</th>
           </tr>
@@ -129,7 +130,7 @@
           <form class="remove-form">
             <input
               type="text"
-              id="appointment_id"
+              id="remove-appointment_id"
               name="appointment_id"
               placeholder="appointment_id"
               required
@@ -142,6 +143,11 @@
         </div>
       </div>
     </section>
+
+    <footer class="footer">
+      <i class="far fa-copyright"></i>
+      <p>Cosmopolitan Hotels</p>
+    </footer>
     <script src="../scripts/landing.js"></script>
     <script src="../scripts/admin.js"></script>
   </body>
