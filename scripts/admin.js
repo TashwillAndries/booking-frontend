@@ -95,7 +95,7 @@ function updateAppoint() {
       "Content-type": "application/json",
     },
   });
-  window.location.reload();
+  // window.location.reload();
 }
 
 const url = "https://serene-basin-92650.herokuapp.com/show-appointments/";
