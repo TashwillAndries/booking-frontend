@@ -137,7 +137,6 @@ body {
   font-weight: bold;
   color: #a5a5a5;
   letter-spacing: 2px;
-  /* resize: none; */
 }
 
 .form-btn {
@@ -276,6 +275,10 @@ body {
   body {
     max-width: 100vw;
   }
+  .container {
+    padding: 3% 3%;
+  }
+
   .header {
     width: 105vw;
   }
@@ -304,19 +307,21 @@ body {
   }
 
   .hotels {
-    width: 10vw;
+    justify-content: center;
+    padding: 0 5%;
+    width: 100%;
   }
 
-  /* .section-heading {
-    margin-top: 15%;
-  } */
-  /* .container {
-    padding: 5%;
-  } */
-
-  /* .section-heading {
-    padding: 15% 5%;
-  } */
+  .section-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10% 5%;
+    margin-right: 25%;
+  }
 
   .hotel-name {
     justify-content: center;
